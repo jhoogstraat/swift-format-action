@@ -1,4 +1,7 @@
 #!/bin/bash -u
+
+git config --global --add safe.directory /github/workspace
+
 if [ "${INPUT_AUTO_CORRECT:-}" = "true" ]; then
   auto_correct=1
   arguments=(format --in-place)
