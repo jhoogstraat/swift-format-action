@@ -1,5 +1,6 @@
 #!/bin/bash -u
 
+echo "Adding safe.directory ${GITHUB_WORKSPACE}"
 git config --global --add safe.directory ${GITHUB_WORKSPACE}
 
 if [ "${INPUT_AUTO_CORRECT:-}" = "true" ]; then
