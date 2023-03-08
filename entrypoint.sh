@@ -1,6 +1,6 @@
 #!/bin/bash -u
 
-git config --global --add safe.directory /github/workspace
+git config --global --add safe.directory ${GITHUB_WORKSPACE}
 
 if [ "${INPUT_AUTO_CORRECT:-}" = "true" ]; then
   auto_correct=1
